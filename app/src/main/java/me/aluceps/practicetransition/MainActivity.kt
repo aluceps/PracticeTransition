@@ -13,6 +13,11 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding.root
+        binding.showActivity.setOnClickListener {
+            showActivity()
+        }
+    }
+
+    private fun showActivity() {
     }
 }
