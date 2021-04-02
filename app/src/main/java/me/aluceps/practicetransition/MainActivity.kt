@@ -19,5 +19,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showActivity() {
+        SubActivity.start(this)
     }
 }
