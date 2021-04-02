@@ -12,14 +12,36 @@
         >
 
         <Button
-            android:id="@+id/show_activity"
+            android:id="@+id/show_activity_anim1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="show activity"
+            app:layout_constraintBottom_toTopOf="@id/show_activity_anim2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <Button
+            android:id="@+id/show_activity_anim2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="show activity"
+            app:layout_constraintBottom_toTopOf="@id/show_activity_anim3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/show_activity_anim1"
+            />
+
+        <Button
+            android:id="@+id/show_activity_anim3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="show activity"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/show_activity_anim2"
             />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

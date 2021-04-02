@@ -13,12 +13,14 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding.showActivity.setOnClickListener {
-            showActivity()
+        binding.showActivityAnim1.setOnClickListener {
+            SubActivity.start(this, SubActivity.Transition.Default)
         }
-    }
-
-    private fun showActivity() {
-        SubActivity.start(this)
+        binding.showActivityAnim2.setOnClickListener {
+            SubActivity.start(this, SubActivity.Transition.Fade)
+        }
+        binding.showActivityAnim3.setOnClickListener {
+            SubActivity.start(this, SubActivity.Transition.Slide)
+        }
     }
 }
